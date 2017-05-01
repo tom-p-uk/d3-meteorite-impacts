@@ -1,0 +1,29 @@
+#title {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+#main-title {
+  font-weight: bold;
+}
+
+.svg-container {
+  margin: auto;
+  text-align: center;
+}
+.tooltip-title {
+  color: white;
+}
+
+#tooltip {
+  background-color: #2f2f30;
+  text-align: center;
+  color: red;
+  padding: 9px;
+  margin: 45px 0 0 45px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.county:hover {
+  opacity: 0.6;
+}
