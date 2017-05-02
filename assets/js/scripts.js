@@ -56,7 +56,7 @@ const renderMeteoriteMap = (meteoriteData, geoData) => {
     .attr('class', 'country')
     .attr('stroke', 'black')
     .attr('stroke-width', '0.1')
-    .style('fill', '#b7c19e');
+    .style('fill', '#7b8968');
 
   // append circles to svg to represent meteorites
   const meteorites = svg.append('g')
@@ -99,7 +99,7 @@ const renderMeteoriteMap = (meteoriteData, geoData) => {
 };
 
 const meteroriteUrl = 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json';
-const geoUrl = 'http://enjalot.github.io/wwsd/data/world/world-110m.geojson';
+const geoUrl = 'https://gist.githubusercontent.com/phil-pedruco/10447085/raw/426fb47f0a6793776a044f17e66d17cbbf8061ad/countries.geo.json';
 
 $.getJSON(meteroriteUrl, meteoriteData => {
     $.getJSON(geoUrl, geoData => renderMeteoriteMap(meteoriteData, geoData));
